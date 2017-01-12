@@ -1,91 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Responsive Web Design</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-  </head>
+<html>
+    <head>
+        <title>Home - Clean & Clear</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <div class="top-bar"></div>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <a class="navbar-brand" href="index.html"> <img src="images/icon-html.png" alt="HTML Tag"></a> -->
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Connect</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+        <!-- Bootstrap Main CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-md-offset-5 img-responsive">
-            <div class="jumbotron-content">
-              <h1>Gaye Lowenstein</h1>
-              <h4>Web Developer</h4>
-                <p>Full-stack web developer that loves writing clean, semantic HTML with clear structured CSS all within a responsive web design for all media sizes.
-                </p>
+        <!-- Custom CSS -->
+        <link href="css/custom.css" rel="stylesheet">
+
+        <!-- Include JQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap main javascript -->
+        <script src="js/bootstrap.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="top-bar"></div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Clean & Clear" />
+                </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="bluebox">
-            <h3>Portfolio</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt distinctio ullam modi et, placeat, voluptatibus quos aperiam, quasi quia minus iste. Atque maxime voluptates reprehenderit, ipsum ipsa perspiciatis tempora maiores.
-            </p>
-            <a class="readmore" href="#">Portfolio</a>
-          </div>
-        </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Innovate<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Create</a></li>
+                            <li><a href="#">Teach</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
 
-        <div class="col-md-4">
-          <div class="redbox">
-            <h3>Portfolio</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt distinctio ullam modi et, placeat, voluptatibus quos aperiam, quasi quia minus iste. Atque maxime voluptates reprehenderit, ipsum ipsa perspiciatis tempora maiores.
-            </p>
-            <a class="readmore" href="#">Portfolio</a>
-          </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <li class="login"><a href="#">Login</a></li>
+                    <li class="register"><a href="#">Register</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-offset-5">
+                        <div class="jumbotron-content">
+                            <h1>Clean & Clear HTML5 Template</h1>
+                            <p class="lead">Clean & Clear is a responsive HTML5 template based on the Twitter Bootstrap framework.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bluebox">
+                        <h3>Learn...</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis posuere sem ac tempus. Curabitur aliquet metus ut purus eleifend, in cursus risus aliquam
+                        </p>
+                        <a class="readmore" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="redbox">
+                        <h3>Create...</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis posuere sem ac tempus. Curabitur aliquet metus ut purus eleifend, in cursus risus aliquam
+                        </p>
+                        <a class="readmore" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bluebox">
+                        <h3>Teach...</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis posuere sem ac tempus. Curabitur aliquet metus ut purus eleifend, in cursus risus aliquam
+                        </p>
+                        <a class="readmore" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pad-top-30">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Whats Happening In The World?</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object img-circle" src="images/small1.jpg" alt="Small Image">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Curabitur a quam vitae velit dapibus vestibulum. Proin dictum hendrerit imperdiet. Nam eget dolor venenatis, vehicula erat vel, varius odio. Fusce luctus facilisis augue, ut cursus augue dapibus eu. Nulla tincidunt, risus in iaculis faucibus, justo metus eleifend eros</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object img-circle" src="images/small2.jpg" alt="Small Image">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Curabitur a quam vitae velit dapibus vestibulum. Proin dictum hendrerit imperdiet. Nam eget dolor venenatis, vehicula erat vel, varius odio. Fusce luctus facilisis augue, ut cursus augue dapibus eu. Nulla tincidunt, risus in iaculis faucibus, justo metus eleifend eros</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object img-circle" src="images/small3.jpg" alt="Small Image">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Curabitur a quam vitae velit dapibus vestibulum. Proin dictum hendrerit imperdiet. Nam eget dolor venenatis, vehicula erat vel, varius odio. Fusce luctus facilisis augue, ut cursus augue dapibus eu. Nulla tincidunt, risus in iaculis faucibus, justo metus eleifend eros</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar -->
+                <div class="col-md-4">
 
-        <div class="col-md-4">
-          <div class="bluebox">
-            <h3>Portfolio</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt distinctio ullam modi et, placeat, voluptatibus quos aperiam, quasi quia minus iste. Atque maxime voluptates reprehenderit, ipsum ipsa perspiciatis tempora maiores.
-            </p>
-            <a class="readmore" href="#">Portfolio</a>
-          </div>
+            </div>
         </div>
-      </div>
-    </div> <!-- /.container -->
-  </body>
+        <footer>
+        </footer>
+    </body>
 </html>
